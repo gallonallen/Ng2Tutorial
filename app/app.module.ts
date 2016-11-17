@@ -14,6 +14,7 @@ import { DashboardComponent }  from './dashboard.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent }     from './heroes.component';
 import { HeroService }         from './hero.service';
+import './rxjs-extensions';
 
 @NgModule({
   imports: [ 

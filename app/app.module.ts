@@ -17,6 +17,8 @@ import { HeroService }         from './hero.service';
 import { HeroSearchComponent } from './hero-search.component';
 import './rxjs-extensions';
 
+import { HighlightDirective } from './highlight.directive';
+
 @NgModule({
   imports: [ 
     BrowserModule, 
@@ -30,7 +32,8 @@ import './rxjs-extensions';
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    HighlightDirective
   ],
   providers: [ HeroService ],
   bootstrap: [ AppComponent ]

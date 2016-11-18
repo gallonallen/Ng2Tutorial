@@ -24,6 +24,7 @@ import { HighlightDirective as ContactHighlightDirective } from './contact/highl
 
 import { AwesomePipe } from './contact/awesome.pipe';
 import { ContactComponent } from './contact/contact.component';
+import { ContactService } from './contact/contact.service';
 
 @NgModule({
   imports: [ 
@@ -47,7 +48,8 @@ import { ContactComponent } from './contact/contact.component';
   ],
   providers: [ 
     HeroService,
-    UserService
+    UserService,
+    ContactService
   ],
   bootstrap: [ AppComponent ]
 })

@@ -1,5 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { FormsModule }   from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 
@@ -11,6 +12,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppComponent }        from './app.component';
 import { TitleComponent }      from './title.component';
+import { ContactModule }       from './contact/contact.module';
 import { DashboardComponent }  from './dashboard.component';
 import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent }     from './heroes.component';
@@ -20,11 +22,6 @@ import { UserService }         from './user.service';
 import './rxjs-extensions';
 
 import { HighlightDirective } from './highlight.directive';
-import { HighlightDirective as ContactHighlightDirective } from './contact/highlight.directive'; 
-
-import { AwesomePipe } from './contact/awesome.pipe';
-import { ContactComponent } from './contact/contact.component';
-import { ContactService } from './contact/contact.service';
 
 @NgModule({
   imports: [ 
@@ -32,14 +29,12 @@ import { ContactService } from './contact/contact.service';
     FormsModule,
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
-    AppRoutingModule
+    AppRoutingModule,
+    ContactModule
   ],
   declarations: [ 
     AppComponent,
     TitleComponent,
-    AwesomePipe,
-    ContactComponent,
-    ContactHighlightDirective,
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
@@ -48,8 +43,7 @@ import { ContactService } from './contact/contact.service';
   ],
   providers: [ 
     HeroService,
-    UserService,
-    ContactService
+    UserService
   ],
   bootstrap: [ AppComponent ]
 })

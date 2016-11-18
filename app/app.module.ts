@@ -20,6 +20,10 @@ import { UserService }         from './user.service';
 import './rxjs-extensions';
 
 import { HighlightDirective } from './highlight.directive';
+import { HighlightDirective as ContactHighlightDirective } from './contact/highlight.directive'; 
+
+import { AwesomePipe } from './contact/awesome.pipe';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports: [ 
@@ -32,6 +36,9 @@ import { HighlightDirective } from './highlight.directive';
   declarations: [ 
     AppComponent,
     TitleComponent,
+    AwesomePipe,
+    ContactComponent,
+    ContactHighlightDirective,
     DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,

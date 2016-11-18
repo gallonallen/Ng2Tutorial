@@ -16,6 +16,7 @@ import { HeroDetailComponent } from './hero-detail.component';
 import { HeroesComponent }     from './heroes.component';
 import { HeroService }         from './hero.service';
 import { HeroSearchComponent } from './hero-search.component';
+import { UserService }         from './user.service';
 import './rxjs-extensions';
 
 import { HighlightDirective } from './highlight.directive';
@@ -37,7 +38,10 @@ import { HighlightDirective } from './highlight.directive';
     HeroSearchComponent,
     HighlightDirective
   ],
-  providers: [ HeroService ],
+  providers: [ 
+    HeroService,
+    UserService
+  ],
   bootstrap: [ AppComponent ]
 })
 

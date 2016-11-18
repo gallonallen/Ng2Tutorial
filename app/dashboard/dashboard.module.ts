@@ -4,11 +4,11 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule }   from '../app-routing.module';
 
 import { DashboardComponent } from './dashboard.component';
-import { HeroSearchComponent } from './hero-search.component';
+import { HeroSearchModule } from '../hero-search/hero-search.module';
 
 @NgModule ({
-    imports:      [ CommonModule, AppRoutingModule ],
-    declarations: [ DashboardComponent, HeroSearchComponent ],
+    imports:      [ CommonModule, AppRoutingModule, HeroSearchModule ],
+    declarations: [ DashboardComponent ],
     exports:      [ DashboardComponent ],
     providers:    [ ]
 })

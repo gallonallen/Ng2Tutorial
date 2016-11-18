@@ -16,7 +16,7 @@ import { TitleComponent }      from './title.component';
 import { ContactModule }       from './contact/contact.module';
 import { DashboardModule }     from './dashboard/dashboard.module';
 import { HeroDetailModule }    from './hero-detail/hero-detail.module';
-import { HeroesComponent }     from './heroes.component';
+import { HeroesModule }     from './heroes/heroes.module';
 import { HeroService }         from './hero.service';
 import { UserService }         from './user.service';
 import './rxjs-extensions';
@@ -32,12 +32,12 @@ import { HighlightDirective } from './highlight.directive';
     AppRoutingModule,
     ContactModule,
     DashboardModule,
-    HeroDetailModule
+    HeroDetailModule,
+    HeroesModule
   ],
   declarations: [ 
     AppComponent,
     TitleComponent,
-    HeroesComponent,
     HighlightDirective
   ],
   providers: [ 
